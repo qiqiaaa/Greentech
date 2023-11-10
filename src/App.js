@@ -7,7 +7,7 @@ import ServiceListPage from './ServiceListPage';
 import SetMeetingPage from './SetMeetingPage';
 import StartMeetingPage from './StartMeetingPage';
 // import Contact from './Contact';
-
+import SetMeeting from './api/SetMeeting';
 const App = () => {
   return (
     <BrowserRouter>
@@ -15,7 +15,7 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/permissionPage" element={<PermissionPage />} />
         <Route path="/serviceListPage" element={<ServiceListPage />} />
-        
+        <Route path="/api/SetMeeting" element={SetMeeting} />
         <Route path="/startMeetingPage" element={<StartMeetingPage />} />
         <Route path="/setMeetingPage" element={<SetMeetingPage />} />
       </Routes>
